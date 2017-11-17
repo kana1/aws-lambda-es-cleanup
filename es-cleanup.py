@@ -3,6 +3,7 @@
 """
 This AWS Lambda function allowed to delete the old Elasticsearch index
 """
+import boto3
 from botocore.auth import SigV4Auth
 from botocore.awsrequest import AWSRequest
 from botocore.credentials import create_credential_resolver
